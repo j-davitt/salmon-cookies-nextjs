@@ -22,7 +22,6 @@ class Store {
     this.cookiesBought.push(cookiesTotal);
   }
 
-
 }
 
 export default Store;

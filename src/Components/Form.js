@@ -33,7 +33,7 @@ const Form = (props) => {
           <input type="number" id="avgCookie" name="avgCookie" onChange={(e) => setAvgCookie(+e.target.value)}/>
 
         </fieldset>
-        <button type="submit" onSubmit={handleSubmit}>Submit</button>
+        <button type="submit" onClick={handleSubmit}>Submit</button>
       </form>
 
     </>
