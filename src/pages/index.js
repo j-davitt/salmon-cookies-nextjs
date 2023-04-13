@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <section id="store">
           <h2>Salmon Cookies Store</h2>
-          <div>
+          <div className='front-section'>
            
               <Image
                 src="/cutter.jpeg"
@@ -47,11 +47,17 @@ export default function Home() {
         </section>
         <section id='family'>
           <h2>Bring your family</h2>
-          <p>Here at Salmon Cookies we have flavors everyone can enjoy. Bring the family this Saturday for a special sneak peek at our new prototype, Trout Muffins!</p>       
+          <Image
+                src="/family1.jpg"
+                alt="Picture of a family"
+                width={420}
+                height={300}
+              />
+          <p className='front-section'>Here at Salmon Cookies we have flavors everyone can enjoy. Bring the family this Saturday for a special sneak peek at our new prototype, Trout Muffins!</p>       
         </section>
         <section id='store-locations'>
           <h2>Store Locations</h2>
-          <ul>
+          <ul className='front-section'>
             <li>Seattle - 324 Cookie Lane</li>
             <li>Tokyo - 353 Fuji Drive</li>
             <li>Dubai - 32948 Desert Place</li>

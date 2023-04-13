@@ -18,7 +18,7 @@ const Form = (props) => {
 
   return (
     <>
-      <button onClick={() => setShowForm(!showForm)}>Add Store</button>
+      <button style={{ margin: "30px" }} onClick={() => setShowForm(!showForm)}>Add Store</button>
       {showForm && (
       <form id="my-form">
         <fieldset>

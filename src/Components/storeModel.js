@@ -13,7 +13,7 @@ class Store {
   }
   getCookiesBought() {
     let cookiesTotal = 0;
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 15; i++) {
       let cookies = Math.floor(randomCust(this.minCust, this.maxCust) * this.avgCookie);
       this.cookiesBought.push(cookies);
       cookiesTotal += cookies;

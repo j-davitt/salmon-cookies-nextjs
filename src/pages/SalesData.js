@@ -3,6 +3,8 @@ import Table from '@/Components/Table';
 import Link from 'next/link';
 import Store from '@/Components/storeModel';
 import { useState } from 'react';
+import Header from '@/Components/Header';
+import Footer from '@/Components/Footer';
 
 const SalesData = () => {
 
@@ -16,10 +18,8 @@ const SalesData = () => {
 
   return (
     <>
-      <div>
-        This is the sales data page!
-      </div>
-      <Link href="/">Home</Link>
+      <Header />
+      
       <Table 
         stores={stores}
         setStores={setStores}
@@ -28,6 +28,7 @@ const SalesData = () => {
         stores={stores}
         setStores={setStores}
       />
+      <Footer />
     </>
   )
 }

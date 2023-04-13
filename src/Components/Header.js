@@ -15,8 +15,8 @@ const Header = () => {
         />
       </div>
       <nav>
+        <Link style={{ paddingRight: "10px" }} href="/">Home</Link>
         <Link href="/SalesData">Sales Data</Link>
-
       </nav>
     </header>
   );

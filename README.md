@@ -1,3 +1,58 @@
+# NEXT.JS
+
+## Research Conducted By: Joe Davitt and Jordan Covington
+
+## Overall Score and Comments
+
+Score (Out of 10): 7
+
+### General Comments
+
+Full stack, I like that it will do endpoints and routing for you.
+
+### Pros
+
+- Felt just like React
+- Routes endpoints for you.
+- Global CSS didn't need to be imported.
+
+### Cons
+
+- Didn't feel like the built in components were user friendly.
+
+### Ratings and Reviews
+
+Documentation
+
+> It didn't feel like we got the opportunity to really explore the full stack capabilities of Next.js with Salmon Cookies.
+
+Systems Requirements
+<!-- Above and beyond ‘node’ and ‘linux’, what dependencies or core requirements exist for this framework? Is it easily deployable to the cloud? Does it require a certain database? -->
+> Core Requirement - React, React-DOM
+
+Ramp-Up Projections
+<!-- How long would/should it take a team of mid-junior developers to become productive? -->
+> Should take a couple weeks if the team is familiar with React.
+
+Community Support and Adoption levels
+
+> Seems very popular based off job postings we have seen.
+
+### Links and Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+
+
+`npm run dev`
+
+Endpoint: /SalesData
+Returns a page with the sales data table.
+
+
+
+## * Next.js documentation below *
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
