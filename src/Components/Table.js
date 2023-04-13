@@ -48,18 +48,18 @@ const Table = (props) => {
     return (
       <>
 
-        <table>
+        <table className="table">
           <thead>
-            <tr>
+            <tr className="cell">
               <th>Location</th>
               {hours.map((hour, idx) => <th key={`hours-${idx}`}>{hour}</th>)}
-              <th>Daily Location Total</th>
+              <th >Daily Location Total</th>
             </tr>
           </thead>
           <tbody>
             {props.stores.map((store, idx) => (
               <tr key={`store-${idx}`}>
-                <td>{store.name}</td>
+                <td >{store.name}</td>
                 {store.cookiesBought.map((cookies, idx) => <td key={`${store}-cookie-${idx}`}>{cookies}</td>)}
               </tr>
             ))}
@@ -70,4 +70,4 @@ const Table = (props) => {
   }
 }
 
-export default Table
+export default Table;

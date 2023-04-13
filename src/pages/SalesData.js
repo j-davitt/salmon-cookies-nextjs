@@ -22,11 +22,11 @@ const SalesData = () => {
         This is the sales data page!
       </div>
       <Link href="/">Home</Link>
-      <Form 
+      <Table 
         stores={stores}
         setStores={setStores}
       />
-      <Table 
+      <Form 
         stores={stores}
         setStores={setStores}
       />

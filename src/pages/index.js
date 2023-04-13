@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Link from 'next/link';
+import Header from '@/Components/Header';
+import Footer from '@/Components/Footer';
+import Image from 'next/image';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -15,102 +13,52 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link href="/SalesData">Sales Data</Link>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
+      <Header />
+      <main>
+        <section id="store">
+          <h2>Salmon Cookies Store</h2>
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
+            <figure>
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
+                src="/cutter.jpeg"
+                alt="Picture of a salmon cookie cutter"
                 width={100}
-                height={24}
-                priority
+                height={100}
               />
-            </a>
+              <figcaption>Salmon Cookie Cutters!</figcaption>
+            </figure>
+            <figure>
+              <Image
+                src="/frosted-cookie.jpg"
+                alt="Picture of a Frosted Salmon Cookie"
+                width={100}
+                height={100}
+              />
+              <figcaption>Salmon Cookies!</figcaption>
+            </figure>
+            <figure>
+              <Image
+                src="/shirt.jpg"
+                alt="Picture of a Salmon T-Shirt"
+                width={100}
+                height={100}
+              />
+              <figcaption>Salmon Shirts!</figcaption>
+            </figure>
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        </section>
+        <section id='store-locations'>
+          <h2>Store Locations</h2>
+          <ul>
+            <li>Seattle - 324 Cookie Lane</li>
+            <li>Tokyo - 353 Fiji Drive</li>
+            <li>Dubai - 32948 Desert Place</li>
+            <li>Paris - 324 Baguette Street </li>
+            <li>Lima - 3253 Beans Way</li>
+          </ul>
+        </section>
       </main>
+      <Footer />
     </>
   )
 }
