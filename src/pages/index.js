@@ -18,40 +18,42 @@ export default function Home() {
         <section id="store">
           <h2>Salmon Cookies Store</h2>
           <div>
-            <figure>
+           
               <Image
                 src="/cutter.jpeg"
                 alt="Picture of a salmon cookie cutter"
                 width={100}
                 height={100}
               />
-              <figcaption>Salmon Cookie Cutters!</figcaption>
-            </figure>
-            <figure>
+              <p>Salmon Cookie Cutters!</p>
+           
               <Image
                 src="/frosted-cookie.jpg"
                 alt="Picture of a Frosted Salmon Cookie"
                 width={100}
                 height={100}
               />
-              <figcaption>Salmon Cookies!</figcaption>
-            </figure>
-            <figure>
+              <p>Salmon Cookies!</p>
+           
               <Image
                 src="/shirt.jpg"
                 alt="Picture of a Salmon T-Shirt"
                 width={100}
                 height={100}
               />
-              <figcaption>Salmon Shirts!</figcaption>
-            </figure>
+              <p>Salmon Shirts!</p>
+          
           </div>
+        </section>
+        <section id='family'>
+          <h2>Bring your family</h2>
+          <p>Here at Salmon Cookies we have flavors everyone can enjoy. Bring the family this Saturday for a special sneak peek at our new prototype, Trout Muffins!</p>       
         </section>
         <section id='store-locations'>
           <h2>Store Locations</h2>
           <ul>
             <li>Seattle - 324 Cookie Lane</li>
-            <li>Tokyo - 353 Fiji Drive</li>
+            <li>Tokyo - 353 Fuji Drive</li>
             <li>Dubai - 32948 Desert Place</li>
             <li>Paris - 324 Baguette Street </li>
             <li>Lima - 3253 Beans Way</li>
